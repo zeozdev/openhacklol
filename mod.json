@@ -1,0 +1,45 @@
+{
+	"geode": "3.1.1",
+	"gd": {
+		"win": "2.206"
+	},
+	"version": "v2.3.2",
+	"id": "prevter.openhack",
+	"name": "OpenHack",
+	"developer": "Zeoz",
+	"description": "A collection of hacks for Geometry Dash",
+	"tags": [
+		"Universal",
+		"Gameplay",
+		"Cheats"
+	],
+	"repository": "https://github.com/zeozdev/OpenHack",
+	"issues": {
+		"info": "Join the Discord server for support",
+		"url": "https://discord.gg/negrolandia"
+	},
+	"resources": {
+		"sprites": [
+			"screenshot-res.png"
+		],
+		"files": [
+			"resources/fonts/*",
+			"resources/hacks/*",
+			"resources/licenses/*"
+		]
+	},
+	"early-load": true,
+	"api": {
+		"include": [
+			"api/*.hpp"
+		]
+	},
+	"settings": {
+		"legacy-render": {
+			"name": "Use Legacy rendering",
+			"description": "Use OpenGL 2.0 instead of OpenGL 3.0 for rendering, which can solve some rendering issues on older hardware",
+			"type": "bool",
+			"default": false
+		}
+	}
+}
